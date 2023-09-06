@@ -6,12 +6,6 @@ const rootReducer = combineReducers({
   produce: produceReducer,
   cart: cartReducer,
 });
-const preloadedState = {
-  cart: {
-    items: [{ id: 1, name: "Apple", quantity: 1 }],
-  },
-};
-
 function configureStore(preloadedState = {}) {
   preloadedState = {
     cart: {
